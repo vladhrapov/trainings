@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Simple page</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous" />
+  <style>
+    body {
+      width: 600px;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Get query</h2>
+  <div id="car-list">
+    <% for(var i = 0; i < cars.length; i++) {%>
+      <a href='http://localhost:3000/car?<%= "mark=" + (cars[i].mark || "") %><%= "&color=" + (cars[i].color || "") %><%= "&year=" + (cars[i].year || "") %>'>
+        <%if (cars[i].mark) { %>
+          <span>mark=<%= cars[i].mark || "" %>,</span>
+          <% } %>
+
+            <%if (cars[i].color) { %>
+              <span>color=<%= cars[i].color || "" %>,</span>
+              <% } %>
+
+                <%if (cars[i].year) { %>
+                  <span>year=<%= cars[i].year || "" %></span>
+                  <% } %>
+      </a>
+      <br />
+      <% } %>
+  </div>
+
+  <h2>Post query</h2>
+  <div>
+
+  </div>
+
+  <form action="/car/add" method="POST" name="car-form">
+    <div class="input-group">
+      <input name="mark" type="text" class="form-control" placeholder="Car`s mark" aria-describedby="sizing-addon2">
+    </div>
+
+    <div class="input-group">
+      <input name="color" type="text" class="form-control" placeholder="Color" aria-describedby="sizing-addon2">
+    </div>
+
+    <div class="input-group">
+      <input name="year" type="text" class="form-control" placeholder="Year" aria-describedby="sizing-addon2">
+    </div>
+
+    <input type="submit" class="btn" text="Submit" />
+  </form>
+  <br />
+  <button id="submit-encoded" type="submit" class="btn">Submit URL Encoded with ajax</button>
+  <br /><br />
+  <button id="submit-json-data" type="submit" class="btn">Submit JSON Data with ajax</button>
+
+  <script src="public/script.js"></script>
+</body>
+
+</html>
