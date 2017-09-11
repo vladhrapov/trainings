@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "pretty": true,
+    "baseUrl": "./app",
+    "typeRoots": [
+      "node_modules/@types",
+      "./app/typings"
+    ],
+    "types": [
+      "core-js"
+    ]
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts"
+  ]
+}

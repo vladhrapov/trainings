@@ -1,0 +1,32 @@
+{
+  "name": "002_angularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --hot --port 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "~4.3.4",
+    "@angular/compiler": "~4.3.4",
+    "@angular/core": "~4.3.4",
+    "@angular/forms": "~4.3.4",
+    "@angular/http": "~4.3.4",
+    "@angular/platform-browser": "~4.3.4",
+    "@angular/platform-browser-dynamic": "~4.3.4",
+    "@angular/router": "~4.3.4",
+    "@types/core-js": "0.9.36",
+    "core-js": "^2.4.1",
+    "es6-shim": "^0.35.3",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "5.4.2",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1",
+    "zone.js": "^0.8.4"
+  }
+}

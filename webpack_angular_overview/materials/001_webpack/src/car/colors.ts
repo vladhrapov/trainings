@@ -1,0 +1,1 @@
+export enum Color { White, Yellow, Black };
