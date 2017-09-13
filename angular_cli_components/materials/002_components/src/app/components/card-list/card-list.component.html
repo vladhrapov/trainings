@@ -1,0 +1,3 @@
+<card *ngFor="let car of cars" [i]="car.id" [mark]="car.mark" [year]="car.year" [color]="car.color" (onBought)="onCarBought($event)">
+  <h2 *ngIf="car.id % 2 === 0">This car on sale!!!!</h2>
+</card>
