@@ -1,0 +1,32 @@
+[
+  {
+      "id": 0,
+      "mark": "BMW",
+      "year": 2009,
+      "color": "red"
+  },
+  {
+      "id": 1,
+      "mark": "BMW",
+      "year": 2009,
+      "color": "red"
+  },
+  {
+      "id": 2,
+      "mark": "BMW",
+      "year": 2009,
+      "color": "red"
+  },
+  {
+      "id": 3,
+      "mark": "BMW",
+      "year": 2009,
+      "color": "red"
+  },
+  {
+      "id": 4,
+      "mark": "BMW",
+      "year": 2009,
+      "color": "red"
+  }
+]

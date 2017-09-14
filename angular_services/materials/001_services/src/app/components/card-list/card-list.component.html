@@ -1,0 +1,3 @@
+<card *ngFor="let car of cars | async" [i]="car.id" [mark]="car.mark" [year]="car.year" [color]="car.color">
+  <h2 *ngIf="car.id % 2 === 0">This car on sale!!!!</h2>
+</card>
