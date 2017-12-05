@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>trigger()</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script>
+    var button1;
+    var button1Ctr = 0;
+
+    $(function () {
+      button1 = $("#first");
+      button1.click(onButton1Click);
+
+      button1.trigger("click");
+      button1.trigger("click");
+      button1.trigger("click");
+    });
+
+    function onButton1Click() {
+      button1Ctr++;
+      $("p:last").text("Button 1 clicked " + button1Ctr);
+    }
+  </script>
+  <style>
+  </style>
+</head>
+
+<body>
+    <input type="button" id="first" value="Button 1" />
+    <p>
+      Button 1 clicked
+    </p>
+</body>
+
+</html>

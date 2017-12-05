@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Keyboard</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: absolute;
+      top: 500px;
+      left: 400px;
+    }
+  </style>
+  <script>
+    window.addEventListener("load", function () {
+      var obj = document.getElementById("obj");
+
+      obj.style.top = window.getComputedStyle(obj, null).getPropertyValue("top");
+      obj.style.left = window.getComputedStyle(obj, null).getPropertyValue("left");
+
+      function isButton(charCode, button) {
+        return String.fromCharCode(charCode) == button;
+      }
+
+      document.addEventListener("keypress", function (event) {
+        if (isButton(event.charCode, "w")) {
+          obj.style.top = parseInt(obj.style.top) - 5 + "px";
+        } else if (isButton(event.charCode, "s")) {
+          obj.style.top = parseInt(obj.style.top) + 5 + "px";
+        } else if (isButton(event.charCode, "a")) {
+          obj.style.left = parseInt(obj.style.left) - 5 + "px";
+        } else if (isButton(event.charCode, "d")) {
+          obj.style.left = parseInt(obj.style.left) + 5 + "px";
+        }
+      }, true);
+
+    }, false);
+  </script>
+
+</head>
+
+<body>
+  <div id="obj"></div>
+</body>
+
+</html>

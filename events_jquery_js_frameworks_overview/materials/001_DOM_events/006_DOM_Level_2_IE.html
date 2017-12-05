@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DOM Level 2</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      var btn1 = document.getElementById("button1");
+
+      if (btn1.addEventListener) {
+        btn1.addEventListener("click",
+          function () {
+            alert("DOM 2 addEventListener handler!");
+          },
+          false);
+      }
+      if (btn1.attachEvent) {
+        btn1.attachEvent("onclick",
+          function () {
+            alert("DOM 2 attachEvent handler!");
+          },
+          false);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <input id="button1" type="button" value="Button" />
+</body>
+
+</html>

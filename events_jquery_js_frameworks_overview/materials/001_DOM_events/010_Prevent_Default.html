@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>preventDefault</title>
+  <script>
+    window.addEventListener("load", function () {
+      document.getElementById("link").addEventListener("click", function(event) {
+        var result = confirm("Are you sure that you want go there?");
+
+        if(!result) {
+          event.preventDefault();
+        }
+      });
+    }, false);
+  </script>
+</head>
+
+<body>
+  <a id="link" href="https://microsoft.com">Go to external resource</a>
+</body>
+
+</html>

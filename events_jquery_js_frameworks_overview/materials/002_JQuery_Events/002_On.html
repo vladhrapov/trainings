@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>on()</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("ul").on("click", function (event) {
+        $(event.target).css("background", "red");
+      });
+    });
+  </script>
+  <style>
+    ul > li {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: green;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+</body>
+
+</html>

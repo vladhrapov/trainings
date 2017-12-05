@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DOM Level 2</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      var btn1 = document.getElementById("button1");
+      var btn2 = document.getElementById("button2");
+
+      if (btn1.addEventListener) {
+        btn1.addEventListener("click", handler, false);
+        btn2.addEventListener("click", removeHandler, false);
+      }
+
+      function handler() {
+        alert("Button 1 handler");
+      }
+
+      function removeHandler() {
+        // Remove listener from button 1 id button1
+        btn1.removeEventListener("click", handler, false);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <input id="button1" type="button" value="Button with event 1" />
+  <input id="button2" type="button" value="Remove event listener from 1" />
+</body>
+
+</html>

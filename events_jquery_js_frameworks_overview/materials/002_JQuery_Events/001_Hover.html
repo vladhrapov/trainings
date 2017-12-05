@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>hover()</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script>
+
+    $(function () {
+      $("div").hover(onIn, onOut);
+    });
+
+    function onIn() {
+      $("div").css({
+        "background": "red"
+      });
+    }
+
+    function onOut() {
+      $("div").css("background", "green");
+    }
+
+  </script>
+  <style>
+    div {
+      background: green;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

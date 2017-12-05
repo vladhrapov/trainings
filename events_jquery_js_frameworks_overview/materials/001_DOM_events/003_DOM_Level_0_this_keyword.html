@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      var out = document.getElementById("input-text");
+      var txt = document.getElementById("txt");
+      txt.oninput = inputHandler;
+
+      function inputHandler() {
+        console.log(this);
+        out.innerText = this.value;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <label for="txt">
+    Input: <input id="txt" type="text" />
+  </label>
+  <div>
+    <span>Output: </span><span id="input-text"></span>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    window.onload = function() {
+      var el = document.getElementById("el");
+
+      el.onclick = function () { alert("hello inline") };
+      el.onclick = clickHandler;
+    }
+
+    function clickHandler() {
+      alert("Hello from click handler");
+    }
+
+  </script>
+  <style>
+    .click-zone {
+      width: 150px;
+      height: 150px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="el" class="click-zone">
+    Click me here
+  </div>
+</body>
+
+</html>
