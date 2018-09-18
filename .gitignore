@@ -31,4 +31,13 @@
 *.out
 *.app
 
+# Dirs
+.vscode/
 node_modules/
+bin/
+Debug/
+!/obj/
+
+# Files
+*.csproj.nuget.*
+.DS_Store
