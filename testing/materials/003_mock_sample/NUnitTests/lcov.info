@@ -1,0 +1,55 @@
+SF:/Users/vlady/Downloads/testing/materials/003_mock_sample/ClassLibrary/Car.cs
+FN:8,System.String ClassLibrary.Car::get_Brand()
+FNDA:1,System.String ClassLibrary.Car::get_Brand()
+DA:9,1
+FN:9,System.String ClassLibrary.Car::get_Engine()
+FNDA:1,System.String ClassLibrary.Car::get_Engine()
+DA:10,1
+FN:10,System.Double ClassLibrary.Car::get_Price()
+FNDA:1,System.Double ClassLibrary.Car::get_Price()
+DA:11,1
+FN:11,ClassLibrary.CarType ClassLibrary.Car::get_Type()
+FNDA:1,ClassLibrary.CarType ClassLibrary.Car::get_Type()
+DA:12,1
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/Users/vlady/Downloads/testing/materials/003_mock_sample/ClassLibrary/CarService.cs
+FN:16,System.Collections.Generic.IEnumerable`1<ClassLibrary.Car> ClassLibrary.CarService::GetCarsByTypeAndYear(ClassLibrary.CarType,System.DateTime)
+FNDA:3,System.Collections.Generic.IEnumerable`1<ClassLibrary.Car> ClassLibrary.CarService::GetCarsByTypeAndYear(ClassLibrary.CarType,System.DateTime)
+DA:17,3
+DA:19,3
+DA:20,3
+DA:22,2
+DA:23,1
+DA:24,1
+DA:27,1
+DA:28,1
+DA:31,1
+DA:32,1
+DA:33,1
+DA:35,3
+BRDA:22,24,0,1
+BRDA:22,24,1,1
+FN:37,System.String ClassLibrary.CarService::HelloWorld()
+FNDA:0,System.String ClassLibrary.CarService::HelloWorld()
+DA:38,0
+DA:39,0
+DA:40,0
+FN:10,System.Void ClassLibrary.CarService::.ctor(ClassLibrary.ICarRepository)
+FNDA:3,System.Void ClassLibrary.CarService::.ctor(ClassLibrary.ICarRepository)
+DA:11,3
+DA:12,3
+DA:13,3
+DA:14,3
+LF:19
+LH:16
+BRF:2
+BRH:2
+FNF:3
+FNH:2
+end_of_record

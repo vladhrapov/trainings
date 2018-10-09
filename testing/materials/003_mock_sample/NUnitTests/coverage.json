@@ -1,0 +1,87 @@
+{
+  "/Users/vlady/Downloads/testing/materials/003_mock_sample/NUnitTests/bin/Debug/netcoreapp2.0/ClassLibrary.dll": {
+    "/Users/vlady/Downloads/testing/materials/003_mock_sample/ClassLibrary/Car.cs": {
+      "ClassLibrary.Car": {
+        "System.String ClassLibrary.Car::get_Brand()": {
+          "Lines": {
+            "9": 1
+          },
+          "Branches": []
+        },
+        "System.String ClassLibrary.Car::get_Engine()": {
+          "Lines": {
+            "10": 1
+          },
+          "Branches": []
+        },
+        "System.Double ClassLibrary.Car::get_Price()": {
+          "Lines": {
+            "11": 1
+          },
+          "Branches": []
+        },
+        "ClassLibrary.CarType ClassLibrary.Car::get_Type()": {
+          "Lines": {
+            "12": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/vlady/Downloads/testing/materials/003_mock_sample/ClassLibrary/CarService.cs": {
+      "ClassLibrary.CarService": {
+        "System.Collections.Generic.IEnumerable`1<ClassLibrary.Car> ClassLibrary.CarService::GetCarsByTypeAndYear(ClassLibrary.CarType,System.DateTime)": {
+          "Lines": {
+            "17": 3,
+            "19": 3,
+            "20": 3,
+            "22": 2,
+            "23": 1,
+            "24": 1,
+            "27": 1,
+            "28": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "35": 3
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 22,
+              "Offset": 24,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.String ClassLibrary.CarService::HelloWorld()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": []
+        },
+        "System.Void ClassLibrary.CarService::.ctor(ClassLibrary.ICarRepository)": {
+          "Lines": {
+            "11": 3,
+            "12": 3,
+            "13": 3,
+            "14": 3
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
