@@ -1,0 +1,20 @@
+﻿@model eMarket.Host.Web.Models.Category.CategoryListViewModel
+
+@{
+    ViewBag.Title = "Categories List";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<ul>
+    @foreach (var category in Model.Categories)
+    {
+        <li>
+            @*@Html.ActionLink(category.Name, "Index", "Categories", new { categoryName = category.Id.ToString() }, new { })*@
+            @Html.RouteLink(category.Name, "ProductsByCategory", new { categoryName = category.Name });
+        </li>
+    }
+</ul>
+
+
+

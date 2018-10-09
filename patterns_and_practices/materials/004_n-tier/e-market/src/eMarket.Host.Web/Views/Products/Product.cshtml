@@ -1,0 +1,16 @@
+﻿@model eMarket.Core.Entities.Product
+
+@{
+    ViewBag.Title = "Product";
+}
+
+<h2>Product</h2>
+
+<ul>
+    <li>@Model.Name</li>
+    <li>@Model.Description</li>
+    <li>@Model.Price</li>
+    <li>@Model.Quantity</li>
+    <li>@Model.Category.Name</li>
+</ul>
+

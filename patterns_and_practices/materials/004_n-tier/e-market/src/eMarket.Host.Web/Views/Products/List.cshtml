@@ -1,0 +1,24 @@
+﻿@model eMarket.Host.Web.Models.Product.ProductListViewModel
+
+@{
+    ViewBag.Title = "Products List";
+}
+
+<h2>Index</h2>
+
+@if (Model.Products != null && Model.Products.Any())
+{
+    <ul>
+        @foreach (var product in Model.Products)
+        {
+            <li>
+                @Html.ActionLink(product.Name, product.Id.ToString(), "Products")
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <div>No products in this category :(</div>
+}
+
