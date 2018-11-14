@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+
+@if(ViewBag.passedId != null) {
+    <div>Segment: @ViewBag.passedId</div>
+}
+
+@if(ViewBag.data != null) {
+    <div>QueryString Data: @ViewBag.data</div>
+}
+
+
+<script>
+    window.localStorage.setItem("data", "value");
+</script>

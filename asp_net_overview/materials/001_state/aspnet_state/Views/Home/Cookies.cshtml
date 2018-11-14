@@ -1,0 +1,16 @@
+﻿<br/>
+<br/>
+<br/>
+<br/>
+
+@{
+    ViewData["Title"] = "Cookies";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<div id="data-container"></div>
+
+<script>
+    document.getElementById("data-container").innerText = JSON.stringify(document.cookie);
+</script>
